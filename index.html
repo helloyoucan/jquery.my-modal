@@ -5,8 +5,11 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<!--默认风格-->
 		<!--<link rel="stylesheet" href="css/jquery.my-modal.1.1.css" />-->
+		<!--win风格-->
 		<link rel="stylesheet" type="text/css" href="css/jquery.my-modal.1.1.winStyle.css" />
+
 	</head>
 
 	<body>
@@ -33,7 +36,17 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" data-main="js/main.js" src="js/require.js"></script>
+		<!--<script type="text/javascript" data-main="js/main.js" src="js/require.js"></script>-->
+		<script type="text/javascript" src="js/jquery1.9.min.js"></script>
+		<script type="text/javascript" src="js/jquery.my-modal.1.1.js"></script>
+		<script>
+			var m1 = new MyModal.modal(function() {
+				alert("你点击了确定");
+			});
+			$('.btn1').on("click", function() {
+				m1.show();
+			});
+		</script>
 	</body>
 
 </html>
