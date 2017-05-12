@@ -16,14 +16,14 @@ var MyModal = (function() {
 				event.stopPropagation(); //阻止事件冒泡
 			});
 			$(".m-modal,.m-modal-close,.m-btn-cancel").on("click", function(event) {
-				that._hide();
+				that.hide();
 			});
 			$(".m-btn-sure").on("click", function(event) {
 				that.fn();
-				that._hide();
+				that.hide();
 			});
 		},
-		_hide: function() {
+		hide: function() {
 			var $modal = $('.m-modal');
 			$modal.children('.m-modal-dialog').animate({
 				"margin-top": "-100%"
