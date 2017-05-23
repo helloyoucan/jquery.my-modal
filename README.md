@@ -5,23 +5,6 @@
 ---
 ### 有默认风格和win风格
 
-#### 调用方式
-
-```javascript
-<script type="text/javascript" src="js/jquery1.9.min.js"></script>
-<script type="text/javascript" src="js/jquery.my-modal.1.1.js"></script>
-<script>
-	var m1 = new MyModal.modal(function() {
-		alert("你点击了确定");//点击确定后的回调函数
-	});
-	$('.btn1').on("click", function() {
-		m1.show();//显示
-		/*隐藏的方法*/
-		//m1.hide()
-	});
-</script>
-```
-
 #### 默认风格
 
 ![默认风格](http://opok8iwaa.bkt.clouddn.com/image/github/modal/defaultStyle.jpg)
@@ -54,4 +37,19 @@
 	</div>
 </div>
 ```
+#### 调用方式
 
+```javascript
+<script type="text/javascript" src="js/jquery1.9.min.js"></script>
+<script type="text/javascript" src="js/jquery.my-modal.1.1.js"></script>
+<script>
+	var m1 = new MyModal.modal(function() {
+		alert("你点击了确定");//点击确定后的回调函数
+	});
+	$('.btn1').on("click", function() {
+		m1.show();//显示
+		/*隐藏的方法*/
+		//m1.hide()
+	});
+</script>
+```
